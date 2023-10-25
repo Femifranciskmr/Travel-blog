@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbacksec {
+   position: relative;
+}
+.headsec{
+    position: absolute;
+    top:5%;
+    left: 65%;
+
+}
+.headsec  ul{
+    display: flex;
+    justify-content: space-around;
+}
+.headsec li{
+    list-style: none;
+}
+.headsec a{
+    text-decoration: none;
+   color: white;
+    margin-right: 25px;
+}
+.headsec a:hover{
+    color: crimson;
+}
+.headsec{
+    display: flex;
+    justify-content: space-around;
+}
+.headsec #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.headerpara{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    right: 20%;
+    
+    
+}
+.headerpara h1{
+   text-align: center;
+}
+.headerparainput{
+    width: 850px;
+    display: flex;
+   justify-content: center;
+   align-items: center;  
+   
+   
+}
+.headerparainput input{
+   left: 50%;
+}
+.card{
+    position: relative;
+    padding:20px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 5px 5px 12px 5px #ccc;
+    border:1px solid transparent;
+
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.about img{
+    width: 400px;
+    height: 200px;
+}
+.aboutpara{
+    text-align: center;
+    padding: 5% 0;
+}
+
+
+
+/* destination section */
+
+
+.card-group img{
+    height: 300px;
+}
+
+.destination .card{
+    margin: 20px;
+}
+.hotels .row1,.row2{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 30px;
+}
+.hotels .row1,.row2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* footer section */
+.contact-warp{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact-in{
+    padding: 40px 30px;
+}
+.contact-in:nth-child(1)
+{
+    flex: 20%;
+    background: url('images/back1.jpg');
+    color: #fff;
+    background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.contact-in:nth-child(2)
+{
+    flex: 45%;
+    background: #c31432;
+}
+.contact-in:nth-child(3)
+{
+    flex: 35%;
+    padding: 0%;
+}
+.contact-in h1{
+    font-size: 24px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.contact-in h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.contact-in h2 i{
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+.contact-in p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contact-in ul{
+    padding: 0;
+    margin: 0;
+}
+.contact-in ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.contact-in ul li a{
+   display: block;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   background: #fff;
+   border-radius: 50px;
+}
+.contact-in ul li a i{
+   font-size: 14px;
+   line-height: 30px;
+   color: #000;
+ }
+ .contact-in form{
+   width: 100%;
+   height: auto;
+  }
+  .contact-in input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    
+  }
+  .contact-input::placeholder{
+    color: #fff;
+  }
+ 
+  .contact-textarea{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    
+  }
+  .contact-textarea::placeholder{
+    color: #fff;
+  }
+ .contact-btn{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+
+ }
+ .contact-in iframe{
+    width: 100%;
+    height: 100%;
+ }
+
+
+
+ @media screen and (max-width:500px){
+    .about{
+        display: block;
+      
+        margin: 10px;
+    }
+    .headerparainput{
+        width: 200px;   
+       
+    }
+
+    .headsec ul{
+       display: block;
+    }
+    .headsec li a{
+        color:white;
+        font-weight: 20px;
+    }
+    .hotels .row1,.row2{
+        display: block;
+    }
+    .imgrow1 {
+    flex-direction: column;
+    }
+    .contact-warp{
+        flex-direction: column;
+    }
+    .headsec a{
+        font-size: 15px;
+    }
+
+    
+ }
